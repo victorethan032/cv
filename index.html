@@ -1,1 +1,655 @@
 
+<!doctype html>
+<html lang="fr"
+      prefix="schema: https://schema.org/"
+      vocab="https://schema.org/"
+      typeof="ProfilePage WebPage"
+      about="https://www.exemple.fr/">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ethan Victor — Candidature Bachelor Informatique | Rentrée 2027</title>
+  <meta name="description" content="Découvrez le parcours d'Ethan Victor, son projet de prototype SaaS d'audit automobile et sa candidature au Bachelor Informatique en alternance pour septembre 2027.">
+  <meta name="author" content="Ethan Victor">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#101827">
+  <meta name="color-scheme" content="light">
+
+  <!-- URL canonique : à remplacer par l'adresse publique définitive -->
+  <link rel="canonical" href="https://www.exemple.fr/">
+
+  <!-- Open Graph : LinkedIn, Facebook, messageries compatibles -->
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Ethan Victor — Portfolio de candidature">
+  <meta property="og:title" content="Ethan Victor — Candidature Bachelor Informatique 2027">
+  <meta property="og:description" content="Un parcours entrepreneurial et technique, un prototype SaaS en cours et une ambition : développer des solutions numériques fiables et sécurisées.">
+  <meta property="og:url" content="https://www.exemple.fr/">
+  <meta property="og:image" content="https://www.exemple.fr/assets/preview-sociale-1200x630.jpg">
+  <meta property="og:image:secure_url" content="https://www.exemple.fr/assets/preview-sociale-1200x630.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ethan Victor — Candidature au Bachelor Informatique, rentrée septembre 2027">
+  <meta property="profile:first_name" content="Ethan">
+  <meta property="profile:last_name" content="Victor">
+
+  <!-- X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ethan Victor — Candidature Bachelor Informatique 2027">
+  <meta name="twitter:description" content="Découvrez mon parcours, mon projet SaaS et ma candidature en alternance dans le domaine de l'informatique.">
+  <meta name="twitter:image" content="https://www.exemple.fr/assets/preview-sociale-1200x630.jpg">
+  <meta name="twitter:image:alt" content="Présentation de la candidature d'Ethan Victor au Bachelor Informatique">
+  <!-- Facultatif : renseigner uniquement si un compte X existe -->
+  <!-- <meta name="twitter:site" content="@VotreCompte"> -->
+
+  <!-- Données structurées JSON-LD : format complémentaire recommandé -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://www.exemple.fr/#profilepage",
+    "url": "https://www.exemple.fr/",
+    "name": "Ethan Victor — Candidature Bachelor Informatique",
+    "description": "Présentation du parcours, du projet numérique personnel et de la candidature d'Ethan Victor au Bachelor Informatique en alternance pour septembre 2027.",
+    "inLanguage": "fr-FR",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://www.exemple.fr/#ethan-victor",
+      "name": "Ethan Victor",
+      "givenName": "Ethan",
+      "familyName": "Victor",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Beaumont-sur-Oise",
+        "postalCode": "95260",
+        "addressCountry": "FR"
+      },
+      "knowsAbout": [
+        "Python",
+        "Développement logiciel",
+        "Traitement de données",
+        "Environnement Unix",
+        "Shell",
+        "Réseaux informatiques",
+        "Cybersécurité",
+        "Figma",
+        "GitHub"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Candidat à une formation en informatique en alternance"
+      },
+      "seeks": {
+        "@type": "EducationalOccupationalProgram",
+        "name": "Bachelor Informatique — Développeur de solutions numériques sécurisées",
+        "educationalProgramMode": "Alternance",
+        "startDate": "2027-09"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172235;
+      --muted: #667085;
+      --paper: #f7f8fa;
+      --surface: #ffffff;
+      --line: #e6e9ef;
+      --accent: #315ee8;
+      --accent-soft: #edf2ff;
+      --dark: #101827;
+      --radius: 18px;
+      --content: 1080px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+                   BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 10;
+      padding: .7rem 1rem;
+      background: white;
+      color: var(--ink);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgb(255 255 255 / 92%);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(var(--content), calc(100% - 40px));
+      min-height: 68px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      font-size: .95rem;
+      font-weight: 750;
+      letter-spacing: -.03em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: .86rem;
+      color: var(--muted);
+    }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .container {
+      width: min(var(--content), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .hero {
+      padding: clamp(4rem, 10vw, 7.5rem) 0 4.5rem;
+      background:
+        radial-gradient(circle at 85% 15%, rgb(49 94 232 / 12%), transparent 28rem),
+        var(--dark);
+      color: white;
+    }
+
+    .eyebrow {
+      margin: 0 0 1.2rem;
+      color: #a9bdff;
+      font-size: .76rem;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-size: clamp(2.5rem, 7vw, 5.4rem);
+      line-height: 1.04;
+      letter-spacing: -.065em;
+    }
+
+    h1 span { color: #9db3ff; }
+
+    .hero-intro {
+      max-width: 680px;
+      margin: 1.6rem 0 0;
+      color: #c6cfdd;
+      font-size: clamp(1rem, 2vw, 1.18rem);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin-top: 2rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: .48rem .8rem;
+      border: 1px solid rgb(255 255 255 / 20%);
+      border-radius: 999px;
+      color: #e4eaff;
+      font-size: .82rem;
+    }
+
+    main { padding: 3.5rem 0 5rem; }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.5fr .8fr;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .panel {
+      padding: clamp(1.4rem, 3vw, 2rem);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .section-kicker {
+      margin: 0 0 .6rem;
+      color: var(--accent);
+      font-size: .73rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      line-height: 1.2;
+      letter-spacing: -.045em;
+    }
+
+    h3 {
+      margin: 0 0 .35rem;
+      font-size: 1.05rem;
+      letter-spacing: -.02em;
+    }
+
+    p { margin: .6rem 0; }
+    .muted { color: var(--muted); }
+
+    .facts {
+      display: grid;
+      gap: 1rem;
+      margin: 0;
+    }
+    .facts div {
+      padding-bottom: .9rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .facts div:last-child {
+      padding-bottom: 0;
+      border: 0;
+    }
+    .facts dt {
+      color: var(--muted);
+      font-size: .78rem;
+    }
+    .facts dd {
+      margin: .15rem 0 0;
+      font-weight: 650;
+    }
+
+    .section {
+      margin-top: 1.2rem;
+      padding: clamp(1.4rem, 3vw, 2.2rem);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: .8rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-heading h2 { margin: 0; }
+
+    .project {
+      padding: 1.25rem;
+      background: #f8f9fc;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .5rem 1rem;
+      margin-bottom: .8rem;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: .84rem;
+      white-space: nowrap;
+    }
+
+    ul.clean {
+      display: grid;
+      gap: .55rem;
+      padding-left: 1.2rem;
+      margin: .8rem 0 0;
+    }
+    li::marker { color: var(--accent); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .timeline-item {
+      padding: 0 0 1.3rem 1.1rem;
+      border-left: 2px solid #dce4ff;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 9px;
+      margin-left: -1.48rem;
+      margin-bottom: .55rem;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+      margin-top: 1rem;
+    }
+    .tag {
+      padding: .42rem .7rem;
+      background: var(--accent-soft);
+      color: #2949a8;
+      border-radius: 7px;
+      font-size: .82rem;
+      font-weight: 600;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      background: var(--dark);
+      color: white;
+    }
+    .contact .muted { color: #c6cfdd; }
+    .contact-link {
+      display: inline-block;
+      padding: .8rem 1.1rem;
+      background: white;
+      color: var(--dark);
+      border-radius: 9px;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 1.8rem 0 2.5rem;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .8rem;
+    }
+
+    @media (max-width: 720px) {
+      .nav { align-items: flex-start; padding-block: 1rem; flex-direction: column; gap: .65rem; }
+      .nav-links { gap: .8rem 1rem; }
+      .intro-grid, .two-col { grid-template-columns: 1fr; }
+      .hero { padding-top: 4rem; }
+      main { padding-top: 1.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="brand" href="#accueil">ETHAN VICTOR</a>
+      <div class="nav-links">
+        <a href="#profil">Profil</a>
+        <a href="#projet">Projet</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil" aria-labelledby="page-title"
+           typeof="Person" about="https://www.exemple.fr/#ethan-victor"
+           resource="https://www.exemple.fr/#ethan-victor"
+           vocab="https://schema.org/">
+    <div class="container">
+      <p class="eyebrow">Candidature · Rentrée septembre 2027</p>
+      <h1 id="page-title">
+        Construire des solutions numériques
+        <span>fiables et sécurisées.</span>
+      </h1>
+      <p class="hero-intro">
+        Je souhaite intégrer un Bachelor Informatique en alternance pour
+        consolider mes bases en programmation, systèmes, réseaux,
+        architecture logicielle et cybersécurité.
+      </p>
+      <div class="hero-meta" aria-label="Informations sur la candidature">
+        <span class="pill">Bachelor Informatique</span>
+        <span class="pill">Développeur de solutions numériques sécurisées</span>
+        <span class="pill">Alternance · Septembre 2027</span>
+      </div>
+      <meta property="name" content="Ethan Victor">
+      <meta property="givenName" content="Ethan">
+      <meta property="familyName" content="Victor">
+    </div>
+  </section>
+
+  <main id="contenu" class="container">
+    <div class="intro-grid">
+      <section class="panel" id="profil" aria-labelledby="profil-title"
+               typeof="Person" about="https://www.exemple.fr/#ethan-victor"
+               vocab="https://schema.org/">
+        <p class="section-kicker">01 / Profil</p>
+        <h2 id="profil-title">Un parcours concret, une nouvelle direction.</h2>
+        <p>
+          Mon intérêt pour l'informatique s'est concrétisé à travers la création
+          d'un prototype de SaaS issu d'un besoin rencontré dans mon activité
+          d'intermédiation automobile. Ce projet m'a amené à explorer le
+          développement assisté par IA, le traitement de données provenant de
+          sources multiples et les premières problématiques de sécurité et de conformité.
+        </p>
+        <p>
+          Je souhaite aujourd'hui acquérir une véritable formation en informatique.
+          Autodidacte et conscient des connaissances qu'il me reste à construire,
+          j'aborde cette orientation avec curiosité, méthode et détermination.
+        </p>
+        <meta property="description" content="Candidat à un Bachelor Informatique en alternance, intéressé par le développement logiciel, les systèmes, les réseaux et la cybersécurité.">
+      </section>
+
+      <aside class="panel" aria-label="Informations de candidature">
+        <p class="section-kicker">En bref</p>
+        <dl class="facts">
+          <div>
+            <dt>Localisation</dt>
+            <dd property="address" typeof="PostalAddress">
+              <span property="addressLocality">Beaumont-sur-Oise</span>
+              (<span property="postalCode">95260</span>)
+            </dd>
+          </div>
+          <div>
+            <dt>Disponibilité visée</dt>
+            <dd>Septembre 2027</dd>
+          </div>
+          <div>
+            <dt>Formation recherchée</dt>
+            <dd>Bachelor Informatique</dd>
+          </div>
+          <div>
+            <dt>Modalité</dt>
+            <dd>Alternance</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+
+    <section class="section" id="projet" aria-labelledby="projet-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">02 / Réalisation personnelle</p>
+          <h2 id="projet-title">Prototype SaaS d'audit automobile</h2>
+        </div>
+        <span class="date">2026 — En cours</span>
+      </div>
+
+      <article class="project" typeof="CreativeWork"
+               about="https://www.exemple.fr/#projet-saas"
+               vocab="https://schema.org/">
+        <div class="project-top">
+          <h3 property="name">Conception d'un outil d'évaluation automobile</h3>
+          <span class="date">Projet personnel</span>
+        </div>
+        <p property="description">
+          À partir d'un besoin identifié dans mon activité professionnelle,
+          conception d'un outil destiné à faciliter l'évaluation de véhicules
+          sportifs et haut de gamme.
+        </p>
+        <ul class="clean">
+          <li>Analyse du besoin métier et définition des fonctionnalités.</li>
+          <li>Exploration de sources de données relatives aux équipements d'origine, à l'historique des véhicules et aux sinistres.</li>
+          <li>Initiation aux processus ETL : extraction, transformation et intégration de données hétérogènes.</li>
+          <li>Prototypage logiciel en Python avec l'assistance d'outils d'IA générative.</li>
+          <li>Conception et exploration d'interfaces avec Figma.</li>
+          <li>Découverte des enjeux de qualité, de provenance et de réconciliation des données.</li>
+          <li>Identification des questions de protection des données, de droits de réutilisation et de conformité (Legal by Design).</li>
+        </ul>
+      </article>
+
+      <div style="margin-top:1.3rem">
+        <h3>Approfondissement technique autodidacte</h3>
+        <ul class="clean">
+          <li>Initiation à l'environnement Unix sur macOS : terminal, Shell, système de fichiers et permissions.</li>
+          <li>Découverte des processus, des scripts et des environnements d'exécution.</li>
+          <li>Premières explorations des réseaux et protocoles de communication.</li>
+          <li>Apprentissage du développement assisté par IA : formulation d'instructions techniques, décomposition des tâches, maîtrise du contexte et vérification des résultats.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="parcours" aria-labelledby="parcours-title">
+      <p class="section-kicker">03 / Expériences et formation</p>
+      <h2 id="parcours-title">Un parcours professionnel et technique.</h2>
+      <div class="two-col">
+        <div>
+          <h3>Expériences professionnelles</h3>
+          <div class="timeline-item">
+            <h3>Entrepreneur — Intermédiation automobile</h3>
+            <p class="date">2025 — 2026</p>
+            <p class="muted">Développement d'activité, prospection, négociation, relation client, rédaction de contrats et gestion administrative, comptable et fiscale.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Apprenti mécanicien automobile</h3>
+            <p class="date">2023 — 2025 · Renault Gueudet / GARAC</p>
+            <p class="muted">Recherche méthodique de pannes électriques et électroniques, diagnostic de systèmes, intervention sur calculateurs et application de procédures techniques.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Formation</h3>
+          <div class="timeline-item">
+            <h3>Préparation du baccalauréat STMG</h3>
+            <p class="date">Candidat individuel · Session 2027</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Bac professionnel Maintenance des véhicules, option A</h3>
+            <p class="date">GARAC, Argenteuil · 2023 — 2025</p>
+            <p class="muted">Scolarité interrompue en classe de première à la suite d'un accident du travail survenu en entreprise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competences" aria-labelledby="competences-title">
+      <p class="section-kicker">04 / Compétences</p>
+      <h2 id="competences-title">Outils, notions et savoir-faire.</h2>
+      <div class="two-col">
+        <div>
+          <h3>Développement et numérique</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">IA générative</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Traitement de données</span>
+            <span class="tag">GitHub</span>
+          </div>
+          <h3 style="margin-top:1.5rem">Environnement informatique</h3>
+          <div class="tags">
+            <span class="tag">Unix / macOS</span>
+            <span class="tag">Shell</span>
+            <span class="tag">Systèmes de fichiers</span>
+            <span class="tag">Permissions</span>
+            <span class="tag">Notions réseau</span>
+          </div>
+        </div>
+        <div>
+          <h3>Compétences professionnelles</h3>
+          <div class="tags">
+            <span class="tag">Analyse</span>
+            <span class="tag">Diagnostic</span>
+            <span class="tag">Autonomie</span>
+            <span class="tag">Apprentissage</span>
+            <span class="tag">Rigueur</span>
+            <span class="tag">Relation client</span>
+            <span class="tag">Gestion d'activité</span>
+          </div>
+          <h3 style="margin-top:1.5rem">Langues</h3>
+          <p>Anglais : B2<br>Espagnol : A2</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="section-kicker">05 / Contact</p>
+        <h2 id="contact-title">Échangeons sur mon projet de formation.</h2>
+        <p class="muted">Candidature au Bachelor Informatique · Alternance · Septembre 2027</p>
+      </div>
+      <a class="contact-link" href="mailto:victorethan.pro@gmail.com">Me contacter</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Ethan Victor</span>
+      <span>Présentation de candidature — Informatique & solutions numériques</span>
+    </div>
+  </footer>
+</body>
+</html>
